@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GitHubService } from './gitHub-service/git-hub.service';
-import {    FormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 
 
 @NgModule({

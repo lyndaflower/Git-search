@@ -21,8 +21,7 @@ search(){
  this.http.get('https://api.github.com/users/' + this.userName)
 .subscribe((response) => {
   this.response = response;
-  console.log(this.response);
-  
+  console.log(this.response); 
 })
 }
 }

@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Git-search';
+  title = 'Github-search';
   constructor ( private svc: GitHubService, private  http : HttpClient  ) {
   this.svc.printToConsole("Got it")
   }

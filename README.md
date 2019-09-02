@@ -1,6 +1,13 @@
-# Api
+# Github-search
+####This app is called Github-Search,This is a Github Search mag application that searches for user and displays their profile info using the Github AP,September 2 2019
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+#### By UMURERWA L.Flower
+
+### Author
+https://github.com/lyndaflower
+
+## Description
+This Github-search was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Development server
 
