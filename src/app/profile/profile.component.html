@@ -1,16 +1,75 @@
-User name :<input type="text" [(ngModel)]="userName">
-<button (click) ="search()">Search</button>
+<div class="container">
+<input type="text" [(ngModel)]="userName"   placeholder="Github username...">
+<button (click) ="search()"class="btn btn-primary">Search</button>
 
 <div *ngIf="response">
-<p>Login name :{{response.login}}</p>
+    <div style="margin-top: 10%;" class="panel panel-default">
+  
+      <div class="panel-heading">
+          <h1>{{response.login}}</h1>
+        <span *ngIf="">Works at {{response.company}}</span> {{response.location}}
+  
+<div class="row">
+    <div class="col-md-4" >
+        <img src="{{response.avatar_url}}" width="400" height="400">
+    </div>
+    <div class="col-md-10">
+      <div class="start">
+          <span class="label label-default">{{response.public_repos}} Public Repos</span>
+          <span class="label label-primary">{{response.public_gist}} Public Gist</span>
+          <span class="label label-success">{{response.followers}} Followers</span>
+          <span class="label label-info">{{response.following}} Following</span>
+          <br>
+
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Username:</strong> {{response.login}}</li>
+            <li class="list-group-item"><strong>Location:</strong> {{response.location}}</li>
+            <li class="list-group-item"><strong>Email:</strong> {{response.email}}</li>
+            <li class="list-group-item"><strong>Member Since:</strong> {{response.created_at}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Repositories</h3>
+        </div>
+
+    <div class="panel-body">
+        <div class="row">
+                <div class="col-md-12">
+                    <div *ngFor="let response of repos">
+                        <div class="row">
+                            
+                            <div class="col-md-9">
+                              
+                                <h3>{{response.name}}</h3>
+                                
+                                <p>{{response.description}}</p>
+
+                                <h4><a href="{{response.html_url}}" target="_blank">View on github</a></h4>
+                            </div>
+
+                            <div class="col-md-3">
+                                <span class="label label-default">{{response.watchers}} Stars </span>
+                                <span class="label label-primary">{{response.forks}} Forks </span>
+                            </div>
+
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+<!-- <div *ngIf="response">
+<img src="{{response.avatar_url}}">
+</div>
 <p>number repos :{{response.public_repos}}</p>
 <p>number of gists :{{response.public_gists}}</p>
 <p>number of followers :{{response.followers}}</p>
-</div> 
-<div id="pattern" class="pattern">
-    <form action="#" method="post" class="f">
-        <label class="is-vishidden">Search the site</label>     
-      <input type="text" [(ngModel)]="userName" placeholder="Search the site" />
-        <input (click) ="search()" type="submit" class="btn search-submit" value="Search">
-  </form>
-  </div>
+</div> -->
